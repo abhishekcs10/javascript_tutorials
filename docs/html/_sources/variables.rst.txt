@@ -1,6 +1,0 @@
-=================
-Defining variable
-=================
-
-var *variable_name* 
-

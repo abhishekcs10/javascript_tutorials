@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 #
-# javascript documentation build configuration file, created by
-# sphinx-quickstart on Wed Dec 21 18:22:12 2016.
+# javascript tutorial documentation build configuration file, created by
+# sphinx-quickstart on Wed Dec 21 20:42:00 2016.
 #
 # This file is execfile()d with the current directory set to its
 # containing dir.
@@ -16,9 +16,8 @@
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
-import os
-import sys
-import sphinx_rtd_theme
+# import os
+# import sys
 # sys.path.insert(0, os.path.abspath('.'))
 
 
@@ -35,12 +34,11 @@ extensions = ['sphinx.ext.autodoc',
     'sphinx.ext.doctest',
     'sphinx.ext.todo',
     'sphinx.ext.imgmath',
-    'sphinx.ext.ifconfig',
     'sphinx.ext.viewcode',
     'sphinx.ext.githubpages']
 
 # Add any paths that contain templates here, relative to this directory.
-templates_path = ['#templates']
+templates_path = ['_templates']
 
 # The suffix(es) of source filenames.
 # You can specify multiple suffix as a list of string:
@@ -52,7 +50,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'javascript'
+project = u'javascript tutorial'
 copyright = u'2016, abhishekcs10'
 author = u'abhishekcs10'
 
@@ -89,9 +87,7 @@ todo_include_todos = True
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = "sphinx_rtd_theme"
-html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
-
+html_theme = 'alabaster'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -102,13 +98,13 @@ html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ['#static']
+html_static_path = ['_static']
 
 
 # -- Options for HTMLHelp output ------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'javascriptdoc'
+htmlhelp_basename = 'javascripttutorialdoc'
 
 
 # -- Options for LaTeX output ---------------------------------------------
@@ -135,7 +131,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'javascript.tex', u'javascript Documentation',
+    (master_doc, 'javascripttutorial.tex', u'javascript tutorial Documentation',
      u'abhishekcs10', 'manual'),
 ]
 
@@ -145,7 +141,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'javascript', u'javascript Documentation',
+    (master_doc, 'javascripttutorial', u'javascript tutorial Documentation',
      [author], 1)
 ]
 
@@ -156,8 +152,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'javascript', u'javascript Documentation',
-     author, 'javascript', 'One line description of project.',
+    (master_doc, 'javascripttutorial', u'javascript tutorial Documentation',
+     author, 'javascripttutorial', 'One line description of project.',
      'Miscellaneous'),
 ]
 
